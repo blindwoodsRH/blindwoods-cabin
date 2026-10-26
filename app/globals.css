@@ -1,0 +1,95 @@
+/* Pine and pale cream; amber only for the one action on a screen. Never an ink B on amber. */
+:root {
+  --pine: #1e3a2f;
+  --cream: #f3f1ea;
+  --fog: #d9ded8;
+  --amber: #e8a33d;
+  --ink: #142019;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--cream);
+  color: var(--ink);
+  font: 16px/1.5 ui-sans-serif, system-ui, sans-serif; /* no third-party fonts */
+}
+
+.shell {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1rem 1rem 5rem;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--fog);
+}
+
+.mark {
+  color: var(--pine);
+  font-weight: 700;
+}
+
+.verified {
+  color: var(--pine);
+}
+
+.unverified {
+  color: #8a4b1f;
+}
+
+.log {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem 0;
+}
+
+.composer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.composer textarea {
+  flex: 1;
+  min-height: 3rem;
+  padding: 0.6rem;
+  border: 1px solid var(--fog);
+  border-radius: 0.5rem;
+  font: inherit;
+}
+
+.composer button {
+  padding: 0 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: var(--amber);
+  color: var(--pine);
+  font-weight: 700;
+}
+
+.composer button:disabled {
+  opacity: 0.5;
+}
+
+.tabs {
+  position: fixed;
+  inset: auto 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.75rem;
+  background: var(--pine);
+}
+
+.tabs a {
+  color: var(--cream);
+  text-decoration: none;
+}
